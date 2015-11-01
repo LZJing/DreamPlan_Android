@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sohu.dreamplan.views.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sl"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp"
+    android:background="#44000000" >
+
+
+    <com.sohu.dreamplan.views.FrontLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cover_image"
+            android:adjustViewBounds="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#30000000"/>
+        <LinearLayout
+            android:paddingBottom="30dp"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/dream_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主题"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余时间:"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+                <TextView
+
+                    android:paddingLeft="6dp"
+                    android:paddingRight="3dp"
+                    android:id="@+id/remaining_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天  进度:"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:paddingLeft="6dp"
+                    android:id="@+id/percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="86"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/camera_image"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            android:layout_gravity="bottom|right"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/camera_white"/>
+        <ImageView
+            android:id="@+id/share_image"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            android:layout_gravity="bottom|left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/share"/>
+
+    </com.sohu.dreamplan.views.FrontLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/green1">
+            <ImageView
+                android:paddingBottom="40dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@drawable/set_up"/>
+            <TextView
+                android:paddingTop="20dp"
+                android:id="@+id/tv_set"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:text="设置"
+                android:textSize="18dp"
+                android:textColor="@color/white"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/red1">
+            <ImageView
+                android:paddingBottom="40dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@drawable/delete"/>
+            <TextView
+                android:paddingTop="20dp"
+                android:id="@+id/tv_del"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:text="删除"
+                android:textSize="18dp"
+                android:textColor="@color/white"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</com.sohu.dreamplan.views.SwipeLayout>

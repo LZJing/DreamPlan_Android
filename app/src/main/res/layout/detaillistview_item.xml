@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <FrameLayout
+        android:layout_width="30dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray2"/>
+        <ImageView
+
+            android:paddingTop="10dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/timeline"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        >
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/publish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:32AM 2015/06/21"
+            android:textSize="16sp"
+            android:textColor="@color/text_gray"/>
+        <TextView
+            android:paddingTop="6dp"
+            android:id="@+id/publish_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="折腾3小时候的成果折腾3小时候的成果折腾3小时候的成果折腾3小时候的成果"
+            android:textSize="20sp"/>
+        <ImageView
+            android:paddingTop="6dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/publish_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

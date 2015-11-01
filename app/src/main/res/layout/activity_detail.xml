@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#ffffff">
+        <ImageButton
+            android:id="@+id/detail_back"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:src="@drawable/gobackbtn"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:padding="@dimen/activity_title_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/activity_detail_title_text"
+            android:textSize="@dimen/activity_title_size"/>
+        <ImageButton
+            android:id="@+id/detail_publish_new"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:src="@drawable/camera_black"
+            />
+    </LinearLayout>
+
+
+
+    <!--添加item -->
+    <com.sohu.dreamplan.views.DetailListView
+        android:id="@+id/detail_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </com.sohu.dreamplan.views.DetailListView>
+
+
+
+</LinearLayout>
